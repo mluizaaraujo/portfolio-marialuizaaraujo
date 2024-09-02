@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* Estilo geral da página*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+/* Estilo da letra escolhida no google fonte */
+    // <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 400 to 900
+
+    .playfair-display-<uniquifier> {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    }
+}
+
+body{
+    background-color: #222121;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    height: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Estilo do menu de opções para clicar */
+
+header {
+    padding: 40px 4%;
+    text-align: center;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #79919b;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 150px;
+}
+
+.contato button{
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: blue;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+header .contato button:hover{
+    box-shadow: 0px 0px 8px #222121;
+
+}
+
+
+/* Estilo do corpo do texto e da imagem */
+
+section.nome{
+    padding: 40px 4%;
+}
+
+section.nome.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.nome .txt-nome h1{
+    color:aqua;
+    font-size: 40px;
+}
+
+.nome .txt-nome p{
+    color:aqua;
+    margin: 40px 0px;
+    font-size: 30px;
+}
+
+.nome .img-foto img{
+    width: 400px;
+    height: auto;
+    margin: 40px 40px 40px 80px;
+}
+
+/* Estilo do rodapé */
+
+footer {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Estilo do formulário */
+
+form {
+    font-size: 20px;
+    color: #fff;
+    margin: 40px 0px;
+}
+
+/* Estilo do título nas demais paginas */
+
+header h1{
+    color: #fff;
+}
+
+/* Estilo do portfólio */
+
+.portfolio h2{
+    color:aqua;
+    margin: 20px 0px;
+    font-size: 40px;
+}
+
+.portfolio p{
+    color:rgb(25, 0, 255);
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.portfolio a{
+    color:rgb(43, 255, 0);
+    margin: 20px 0px;
+    font-size: 20px;
+}
